@@ -46,10 +46,10 @@ $('.recent-posts-container').slick({
     var headermenu = document.getElementById("headermenu");
 
     if (checkBox.checked == true){
-      niceCheckbox.style.backgroundImage = "url(../img/menu-mobile-hover.png)";
+      niceCheckbox.style.backgroundImage = "url(img/menu-mobile-hover.png)";
       headermenu.style.display = "grid";
     } else {
-      niceCheckbox.style.backgroundImage = "url(../img/menu-mobile.png)";
+      niceCheckbox.style.backgroundImage = "url(img/menu-mobile.png)";
       headermenu.style.display = "none";
     }
 

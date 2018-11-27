@@ -1,0 +1,690 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.main-header
+    	grid-template-columns: repeat(10, 1fr)
+
+	.menu-phone
+		grid-column: 4 / 6
+
+	.header-menu
+		grid-gap: 15px
+		grid-column: 4 / 7
+
+	.menu-item
+    	a
+        	font-size: 12px	
+	
+	.header-right
+		grid-column: 11 / 11
+    	grid-gap: 15px
+
+
+	.icon-cart
+		height: 20px
+		width: 20px
+
+	.icon-search
+		height: 20px
+		width: 20px	
+
+	.slider
+		h1
+        	font-size: 36px
+		h2 
+        	font-size: 24px
+		h3 
+			font-size: 18px
+		p 
+        	font-size: 14px
+	        
+	.button
+    	font-size: 14px	
+
+
+	.project-content
+		bottom: 15px
+
+	.partners
+    	min-height: 289px
+
+	.partners-logo
+		min-height: 280px 
+		text-align: center
+		a 	
+			img 
+				width: 150px
+				height: auto
+
+	.latest-categories
+    	padding-left: 15%
+
+
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.header-menu
+		grid-gap: 10px
+		grid-column: 4 / 4
+
+	.menu-phone
+		grid-column: 4 / 5
+
+	.menu-item
+    	a
+        	color: #ffffff
+        	text-decoration: none
+        	font-size: 10px
+
+	.main-header
+    	grid-template-columns: repeat(7, 1fr)
+
+	.header-right
+    	grid-gap: 10px
+
+	.slider
+		h1
+        	font-size: 36px
+		h2 
+        	font-size: 24px
+		h3 
+			font-size: 18px
+		p 
+        	font-size: 14px
+
+	.button
+    	font-size: 12px
+
+	.wallper
+    	.slick-prev
+        	width: 30px
+        	height: 64px
+
+	.wallper
+    	.slick-next
+        	width: 30px
+        	height: 64px
+
+	.services-item
+		a 	
+			h3 
+				font-size: 18px
+			p 
+				font-size: 12px
+			
+	.services
+    	grid-template-columns: repeat(2, 2fr)
+
+	.realization
+    	padding-top: 5px
+    	max-height: 500px
+    	h2 
+    	    font-size: 24px
+
+    	p 
+    	    font-size: 14px
+
+
+	.realization-img
+    	height: 260px
+
+	.textbox
+    	min-height: 130px
+
+	.textbox-content
+    	padding-left: 40px 
+    	padding-top: 15px
+    	grid-column: 1 / 12
+    	h2 
+    	    font-size: 24px
+      
+    	p 
+    	    font-size: 14px
+
+	.textbox-btn
+		.button
+			font-size: 12px
+
+	.latest-projects
+		padding-top: 40px
+		h3 
+			font-size: 28px
+		p 
+			font-size: 14px
+
+	.latest-categories
+		grid-gap: 20px
+		padding: 20px
+		padding-left: 50px
+		padding-right: 50px
+
+	.categories-btn
+		padding: 8px 15px
+
+    	
+
+	.latest-priject-item
+    	grid-template-columns: repeat(2, 1fr)
+
+	.project-item
+		max-width: 370px
+
+	.latest-btn
+    	a
+    	    font-size: 12px
+    	    padding: 10px 30px 
+	
+	.video-item
+    	text-decoration: none
+    	line-height: 16px
+    	h2 
+    	    color: #ffffff
+    	    font-weight: normal
+    	    font-size: 24px
+    	p
+    	    color: #ffffff
+    	    font-size: 12px
+    	    line-height: 30px
+    	    span 
+    	        color: $hover
+
+	.video-presentation
+    	min-height: 350px
+
+	.video-btn
+    	margin-top: 100px
+    	left: 160px
+    	width: 70px
+    	height: 70px
+    
+	.video-play
+    	width: 50px
+    	height: 50px
+    	top: 10px
+    	left: 10px
+
+	
+
+	.counters
+    	height: 460px
+    	.container
+    	    max-width: 800px
+    	    grid-template-columns: repeat(3, 2fr)
+
+	.counters-item
+		padding-top: 30px
+		&:nth-child(3)
+			grid-column: 1 / 3
+			grid-row: 2
+		&:nth-child(4)
+			grid-column: 2 / 4
+			grid-row: 2 
+
+	.recent-posts
+		.slick-prev
+			left: 46%
+		.slick-next
+			left: 50%
+
+	.partners
+    	min-height: 289px
+
+	.partners-logo
+		min-height: 280px 
+		text-align: center
+		a 	
+			img 
+				width: 130px
+				height: auto
+			
+	.footer
+    	grid-template-columns: repeat(2, 2fr)	
+
+	.widgers-footer
+		grid-column: 2 / 3
+		grid-row: 1
+
+	.our-twitter-footer
+		 grid-column: 1 / 2
+		 grid-row: 2
+
+	.recent-footer
+		grid-column: 2 / 3
+		grid-row: 2
+
+	.copyright
+		.container
+			padding: 30px
+
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	
+	.check
+		display: block
+
+	.header-menu
+		display: none
+		grid-gap: 10px
+		grid-column: 3 / 3
+		grid-template-columns: repeat(4, 2fr)
+		grid-row: 3
+		padding-top: 20px
+
+
+	.main-header
+    	grid-template-columns: repeat(7, 3fr)
+
+
+	.menu-item
+		text-align: center
+		border: 1px solid #ffffff
+		border-radius: 3px	
+		width: 60px	
+		&:hover
+			border: 1px solid $hover
+			
+		&:active
+			border: 1px solid $accent
+			
+		a
+			color: #ffffff
+			text-decoration: none
+			font-size: 10px
+
+			padding: 10px 0
+			
+			&:hover
+				border: none
+				
+			&:active
+				border: none
+
+
+	.logo
+		min-width: 140px
+		img 
+			height: 30px
+		span 
+			font-size: 24px
+
+	.header-right
+		grid-gap: 10px
+		grid-row: 1
+		position: absolute
+		top: 5px
+		left: 90%
+		height: 20px
+		align-content: flex-start
+
+	.slider
+		h1
+        	font-size: 28px
+		h2 
+        	font-size: 16px
+		h3 
+			font-size: 12px
+		p 
+        	font-size: 10px
+
+	.button
+		font-size: 10px
+		padding: 8px 15px
+
+	.wallper
+    	.slick-prev
+        	width: 30px
+        	height: 24px
+
+	.wallper
+    	.slick-next
+        	width: 30px
+        	height: 24px
+
+	.wallper
+		.slick-dots
+			li
+				button
+					display: none
+
+
+	.realization
+		
+		min-height: 300px
+		
+		p 
+			padding-bottom: 10px
+
+
+	.realization-img
+		height: 260px
+		background-position: bottom
+
+
+
+	.excellent
+		background-color: #fbfaf8
+		.container
+			grid-template-columns: repeat(1, 2fr)
+
+	.excellent-content
+		grid-row: 1
+
+	.excellent-img
+		grid-row: 2
+
+	.latest-categories
+		grid-template-columns: repeat(3, 3fr)
+		grid-gap: 20px
+		padding: 20px
+		padding-left: 40px
+		padding-right: 40px
+		div
+			&:nth-child(1)
+				grid-column: 2 / 3
+				grid-row: 1
+			&:nth-child(2)
+				grid-column: 1 / 2
+				grid-row: 2
+			&:nth-child(3)
+				grid-column: 2 / 3
+				grid-row: 2
+			&:nth-child(4)
+				grid-column: 3 / 4
+				grid-row: 2
+			&:nth-child(5)
+				grid-column: 2 / 3
+				grid-row: 3
+
+
+	.categories-btn
+		padding: 8px 10px
+
+
+
+	.latest-priject-item
+		grid-template-columns: repeat(1, 1fr)
+
+	.cont
+		max-width: 400px
+		margin: auto
+    	padding: 0 30px
+
+	.counters
+    	height: 460px
+    	.container
+    	    max-width: 480px
+    	    grid-template-columns: repeat(2, 3fr)
+
+	.recent-posts
+		.slick-prev
+			left: 44%
+		.slick-next
+			left: 52%	
+
+
+
+	.partners-logo
+		grid-template-columns: repeat(2, 2fr)
+
+	.footer
+    	grid-template-columns: repeat(1, 4fr)	
+
+	.widgers-footer
+		display: grid
+		grid-template-columns: repeat(3, 2fr)
+		text-align: center
+		align-content: center
+		grid-column: 1 / 2
+		grid-row: 2
+		h2 
+			grid-column: 1 / 6
+	
+	.widgers-footer-items
+		grid-column: 2 / 2
+		grid-row: 2
+		
+	.about-footer
+		grid-column: 1 / 2
+		grid-row: 1		
+
+	.our-twitter-footer		
+		grid-column: 1 / 2
+		grid-row: 3
+		margin-bottom: 10px
+		h2 
+			text-align: center
+
+	.recent-footer
+		grid-column: 1 / 2
+		grid-row: 4
+		h2 
+			text-align: center
+
+
+	.copyright
+    	height: 200px
+
+
+	.copyright-right
+		padding-top: 0
+		float: left
+
+
+	
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+
+	.check
+		display: block
+
+		right: 75%
+
+	.header-menu
+		display: none
+		grid-gap: 10px
+		grid-column: 1 / 3
+		grid-template-columns: repeat(4, 2fr)
+		grid-row: 3
+		padding-top: 20px
+
+	.header-right
+		top: 10px
+		left: 80%
+
+
+	.icon-cart
+		display: none
+	
+	.icon-search
+		background-position: 50% 100%
+
+	.logo
+		position: relative
+		left: 35%
+
+	.wallper
+		min-height: 120vw
+
+
+	.services
+    	grid-template-columns: repeat(1, 4fr)
+
+	.slider
+		h1
+        	font-size: 28px
+		h2 
+        	font-size: 16px
+		h3 
+			font-size: 12px
+		p 
+        	font-size: 12px
+
+	.realization
+		max-height: 400px
+		h2 
+			line-height: 1
+			margin-bottom: 10px
+		p 
+			line-height: 1.5
+			margin-bottom: 0
+			padding-bottom: 0
+
+	.realization-img
+		height: 160px
+
+	.textbox
+		.container
+			max-width: 320px
+
+	.textbox-content
+		padding: 0
+		h2 
+			font-size: 22px 
+		
+	.textbox-btn
+		padding: 10vh 40px 0 0
+		max-width: 100px
+		.button
+			padding-right: 10px
+			padding-left: 10px
+
+	.latest-categories
+		grid-template-columns: repeat(1, 5fr)
+		grid-gap: 20px
+		padding: 20px
+		padding-left: 40px
+		padding-right: 40px
+		div
+			&:nth-child(1)
+				grid-column: 1 / 3
+				grid-row: 1
+			&:nth-child(2)
+				grid-column: 1 / 3
+				grid-row: 2
+			&:nth-child(3)
+				grid-column: 1 / 3
+				grid-row: 3
+			&:nth-child(4)
+				grid-column: 1 / 3
+				grid-row: 4
+			&:nth-child(5)
+				grid-column: 1 / 3
+				grid-row: 5
+
+
+	.video-btn
+		left: 40%
+
+	.video-item
+		line-height: 1px
+		h2 
+			line-height: 1
+		p 
+			margin: 0
+			padding: 0
+			line-height: 1.5
+
+
+	.excellent-img
+		margin-top: 20px
+		min-height: 416px
+
+
+	.excellent-content
+		padding: 50px 0 0 0
+		margin: 0
+		h2
+			font-size: 24px
+		p
+			font-size: 14px
+			
+
+
+	.excellent-content-rows
+		img 
+			right: 20px		
+		p 
+			padding: 0 0 0 10px
+			margin: 0
+
+	.counters
+		height: 650px
+		.container
+			max-width: 320px
+			grid-template-columns: repeat(2, 3fr)
+
+	.counters-item
+		padding: 30px 0 0 0
+		&:nth-child(1)
+			grid-column: 1 / 1
+			grid-row: 1
+		&:nth-child(2)
+			grid-column: 2 / 2
+			grid-row: 1
+		&:nth-child(3)
+			grid-column: 1 / 2
+			grid-row: 2
+		&:nth-child(4)
+			grid-column: 2 / 2
+			grid-row: 2
+		&:nth-child(5)
+			grid-column: 1 / 3
+			grid-row: 3
+
+	.about-footer
+		.logo
+			max-width: 150px
+
+	.recent-post
+		height: 150px
+
+	.recent-img
+		min-height: 137px
+
+	.partners-logo
+		grid-template-columns: repeat(1, 4fr)
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

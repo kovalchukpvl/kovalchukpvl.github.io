@@ -1,0 +1,1113 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+// Пользовательские стили
+.grid
+    display: grid
+
+.container
+    max-width: 1230px
+    margin: auto
+    padding: 0 30px
+
+header
+    height: 100vh
+    
+    .container
+        padding-top: 30px
+
+
+.wallper
+    position: absolute
+    min-height: 100vh
+    width: 100%
+    
+    margin-bottom: 100px
+
+.wallper-img
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    position: relative
+    min-height: 100vh
+    width: 100%
+    
+    
+.wallper
+    .slick-prev
+        top: 50%
+        left: 5%
+        display: block
+        background-image: url(../img/left_arrow.png)
+        background-size: contain
+        background-repeat: no-repeat
+        width: 40px
+        height: 74px
+        z-index: 10
+        &::before
+            content: ""
+        &:hover
+            background-image: url(../img/left_arrow.png)
+            opacity: 0.3
+            transition: background-image .2s ease   
+        &:active
+            opacity: 0.9
+            filter: brightness(0)
+            transition: filter .2s ease
+            
+      
+.wallper
+    .slick-next 
+        top: 50%
+        right: 5%
+        display: block
+        background-image: url(../img/right_arrow.png)
+        background-size: contain
+        background-repeat: no-repeat
+        width: 40px
+        height: 74px
+        z-index: 10
+        &::before
+            content: ""
+        &:hover
+            background-image: url(../img/right_arrow.png)
+            opacity: 0.3
+            transition: background-image .2s ease    
+        &:active
+            opacity: 0.9
+            filter: brightness(0)
+            transition: filter .2s ease
+    
+// .wallper
+//     .slick-dots  
+//         top: 90%
+//         li
+//             margin: 3px
+            
+//             button
+//                 display: block
+//                 position: absolute
+//                 width: 9px
+//                 height: 9px
+//                 background-color: rgba(255, 255, 255, 0.6)
+//                 border: 1px solid rgba(255, 255, 255, 0)
+//                 border-radius: 10px
+//                 opacity: .5
+//                 font-size: 0
+//                 z-index: 10
+//                 &::before
+//                     content: ""
+//                 &:focus
+//                     width: 8px
+//                     height: 8px
+//                     background-color: rgba(255, 255, 255, 0.1)
+//                     border: 2px solid #d3c1ad   
+// .wallper
+//     .slick-active + button
+//         border-radius: 20px
+//         width: 16px
+//         height: 16px
+//         background-color: rgba(255, 255, 255, 0.1)
+//         border: 2px solid #d3c1ad
+
+// .wallper
+//     .slick-dots
+//         bottom: 25px
+
+// .wallper
+//     .slick-dots 
+//         li 
+//             margin: 3px
+            
+//             button
+//                 display: block
+//                 position: absolute
+//                 width: 5px
+//                 height: 5px
+//                 background-color: rgba(255, 255, 255, 0.6)
+//                 border: 1px solid rgba(255, 255, 255, 0)
+//                 border-radius: 10px
+//                 opacity: .5
+//                 font-size: 0
+//                 z-index: 10
+//                 &::before
+//                     content: ""
+//                 &:focus
+//                     width: 5px
+//                     height: 5px
+//                     background-color: rgba(255, 255, 255, 0.1)
+//                     border: 2px solid #d3c1ad   
+
+
+
+    
+
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 10px 20px
+	font-size: 16px
+	font-weight: 800
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($accent, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+
+.check
+    display: none
+    position: absolute
+    top: 10px
+    right: 40%
+    margin-bottom: 20px
+    height: 25px
+
+.niceCheck
+	display: inline-block
+	top: 15px
+	right: 50%
+	width: 100px
+	height: 25px
+	cursor: pointer
+	background-image: url(../img/menu-mobile.png)
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: 50% 
+	margin-bottom: 50px
+	input
+		width: 100%
+		height: 100%
+		opacity: .0
+
+.main-header
+    grid-template-columns: repeat(5, 1fr)
+    position: relative
+
+.logo
+    display: block
+    min-width: 200px
+    background-size: cover
+    background-position: center
+    margin-right: 10px
+    span 
+        display: inline
+        font-family: 'raleway-example'
+        font-size: 34px
+        vertical-align: top
+        color: #ffffff
+        position: relative
+
+        
+.header-menu
+    grid-column: 4 / 5
+    grid-template-columns: repeat(8, 1fr)
+    grid-gap: 25px
+    align-content: center
+    
+
+.menu-item
+    display: inline
+    a
+        color: #ffffff
+        text-decoration: none
+        font-size: 14px
+        &:hover
+            transition: color .2s ease
+            color: $hover
+            border-bottom: 1px solid $hover
+        &:active
+            transition: color .2s ease
+            color: $accent
+            border-bottom: 1px solid $accent
+        
+            
+.header-right
+    grid-template-columns: repeat(2, 1fr)
+    align-content: center
+    grid-column: 6 / 7
+    grid-gap: 15px
+    
+              
+.icon-cart
+    display: inline-block
+    width: 24px
+    height: 24px
+    background-image: url(../img/icon-cart.png)
+    background-repeat: no-repeat
+    background-position: 50%
+    background-size: contain
+    &:hover
+        transition: background-image .2s ease
+        background-image: url(../img/icon_cart.png)
+    &:active
+        transition: background-image .2s ease
+        filter: brightness(0)
+
+.icon-search
+    width: 24px
+    height: 24px
+    background-image: url(../img/icon-search.png)
+    background-repeat: no-repeat
+    background-position: 50%
+    background-size: contain
+    &:hover
+        transition: background-image .2s ease
+        background-image: url(../img/icon_search.png)
+    &:active
+        transition: background-image .2s ease
+        filter: brightness(0)         
+
+
+    
+.slider
+    position: relative
+    text-align: center
+    align-content: center
+    height: 70%
+
+    h1
+        font-size: 52px
+        color: #ffffff
+        line-height: 1
+        margin: 0
+    h2 
+        font-size: 36px
+        color: #ffffff 
+        margin: 0
+        line-height: 2
+    p 
+        color: #ffffff
+            
+    .button
+        margin-top: 30px
+
+
+    
+.services
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 10px
+    min-height: 370px
+    text-align: center
+    align-content: center
+    padding: 20px
+
+    
+
+.services-item
+    align-content: center
+    text-align: center
+    min-height: 230px
+    a
+        text-decoration: none
+        .srvs-img
+            align-content: center
+            min-height: 60px
+            margin: 0
+            background-image: url(../img/servicer/icon-1.png)
+            background-repeat: no-repeat
+            background-position: 50%
+        p 
+            font-size: 14px
+            color: $gray
+        hr 
+            width: 70px
+            border: 2px solid $hover
+            opacity: .3
+        h3
+            font-size: 22px
+            line-height: 1
+        &:hover
+            .srvs-img
+                transition: background-image .3s ease
+                background-image: url(../img/servicer/icon_1.png)
+            h3
+                transition: color .3s ease
+                color: $hover
+            hr
+                transition: opacity .5s ease
+                opacity: 1
+        &:active
+            .srvs-img
+                transition: background-image .2s ease
+                filter: brightness(0)
+            h3
+                transition: color .2s ease
+                color: #000000
+            hr
+                filter: brightness(0)
+       
+         
+    &:nth-child(2)
+        a
+            .srvs-img
+                background-image: url(../img/servicer/icon-2.png)
+            &:hover
+                .srvs-img
+                    background-image: url(../img/servicer/icon_2.png)
+    &:nth-child(3)
+        a
+            .srvs-img
+                background-image: url(../img/servicer/icon-3.png)
+            &:hover
+                .srvs-img
+                    background-image: url(../img/servicer/icon_3.png)
+    &:nth-child(4)
+        a
+            .srvs-img
+                background-image: url(../img/servicer/icon-4.png)
+            &:hover
+                .srvs-img
+                    background-image: url(../img/servicer/icon_4.png)
+
+    
+
+.realization
+    display: block
+    background-color: #fbfaf8         
+    text-align: center
+    padding-top: 30px
+    max-height: 700px
+    h2 
+        font-size: 30px
+        line-height: 3
+        margin-bottom: 0
+    p 
+        font-size: 16px
+        margin: 0
+        padding-bottom: 40px
+      
+.realization-img
+    height: 460px
+    background-size: contain 
+    background-position: bottom
+    background-repeat: no-repeat
+    
+
+.textbox
+    min-height: 150px
+    background: linear-gradient(to right, $gradient-start, $gradient-end)
+    background-position: top
+    margin: 0
+
+        
+        
+.textbox-content
+    padding-left: 40px 
+    padding-top: 15px
+    grid-column: 1 / 12
+    h2 
+        font-size: 28px
+        color: #ffffff
+        font-weight: normal 
+        line-height: 1
+        span 
+            color: $hover       
+    p 
+        font-size: 18px
+        color: #615855
+        line-height: 1
+    
+    
+.textbox-btn
+    padding: 50px 40px 0 30px
+    grid-column: 12 / 12
+    text-align: right
+ 
+
+.latest-projects
+    min-height: 850px
+    text-align: center
+    padding-top: 60px
+    h2
+        font-size: 32px
+        line-height: 1
+        margin-bottom: 20px
+    p
+        margin-bottom: 10px
+        
+        
+
+.latest-categories
+    grid-template-columns: repeat(8, 1fr)
+    grid-gap: 20px
+    padding: 20px
+    padding-left: 250px
+
+
+.categories-btn
+    text-decoration: none
+    color: $gray
+    border: 1px solid #ebebeb
+    border-radius: 3px
+    padding: 8px 20px
+    margin-right: 5px
+    font-size: 14px
+    &:hover
+        transition: background-color .2s ease
+        background-color: $accent
+        border: 1px solid $accent
+        color: #ffffff
+    
+
+.latest-priject-item
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 25px
+    padding: 5px
+    
+.project-item
+    min-height: 325px
+    position: relative
+    background-color: #fbfaf8
+    text-decoration: none
+    &:hover
+        .project-hover
+            display: block
+        color: $accent
+        .project-content
+            h3 
+                color: #ffffff
+            p 
+                color: $hover
+        &::before
+            opacity: .85    
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: $gradient-start
+        opacity: .001
+        transition: opacity .3s ease
+        z-index: 6
+    &:active
+        &::before
+            background-color: $gradient-end
+            opacity: .7
+            transition: opacity .1s ease
+      
+.project-hover
+    display: none
+    position: absolute
+    .project-hover-link
+        position: absolute
+        top: 110px
+        left: 140px
+        right: 0
+        bottom: 0
+        height: 35px
+        width: 30px
+        background-image: url(../img/laster/link.png)
+        background-repeat: no-repeat 
+        z-index: 12
+        &:hover
+            background-image: url(../img/laster/link-1.png)
+        &:active
+            filter: brightness(0)
+        
+    .project-hover-lupa
+        position: absolute
+        top: 110px
+        left: 200px
+        right: 0
+        bottom: 0
+        height: 35px
+        width: 30px
+        background-image: url(../img/laster/lupa.png)
+        background-repeat: no-repeat 
+        z-index: 12
+        &:hover
+            background-image: url(../img/laster/lupa-1.png)
+        &:active
+            filter: brightness(0)
+
+.project-img
+    position: relative
+    z-index: 2
+    min-height: 237px
+    background-size: contain
+    background-position: top 
+    background-repeat: no-repeat   
+    &::before
+        content: ''
+        position: absolute
+        top: 228px
+        left: 20px
+        right: 0
+        bottom: 0
+        width: 40px
+        height: 30px
+        background-image: url(../img/laster/arrow.png)
+        background-repeat: no-repeat
+        z-index: 12    
+
+.project-content
+    position: relative
+    z-index: 7
+    text-align: left
+    padding: 0 30px
+    line-height: 0
+    h3 
+        color: $hover
+        font-size: 20px 
+        line-height: 1
+    p 
+        color: $gray
+        line-height: 0
+        font-size: 14px
+        
+
+.latest-btn
+    padding: 35px 0
+    a
+        font-size: 14px
+        padding: 13px 35px 
+
+.video-item
+    text-decoration: none
+    line-height: 16px
+    h2 
+        color: #ffffff
+        font-weight: normal
+        font-size: 30px
+    p
+        color: #ffffff
+        font-size: 16px
+        line-height: 30px
+        span 
+            color: $hover
+
+.video-presentation
+    position: relative
+    min-height: 650px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    align-content: center
+    text-align: center
+    &:hover
+        .video-play
+            background-image: url(../img/presentation/icon-play-1.png)
+            transition: background-image .5s ease
+        &::before
+            opacity: .7
+    &:active
+        .video-play
+            background-image: url(../img/presentation/icon-play-1.png)
+            filter: brightness(0)
+            transition: background-image .5s ease  
+        .video-btn
+            opacity: .1
+            background-color: #ffffff
+        &::before
+            opacity: .9 
+            transition: opacity .2s ease
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: #222222
+        opacity: .4
+        transition: opacity .5s ease
+    > *
+        z-index: 1
+
+    
+    
+.video-btn
+    margin-top: 100px
+    position: relative
+    left: 200px
+    width: 100px
+    height: 100px
+    border-radius: 100px
+    opacity: .4
+    background-color: #333333
+
+    
+.video-play
+    position: relative
+    width: 70px
+    height: 70px
+    top: 15px
+    left: 15px
+    background-image: url(../img/presentation/icon-play.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%    
+    z-index: 20
+    
+
+.excellent
+    background-color: #fbfaf8
+    .container
+        grid-template-columns: repeat(2, 1fr)
+        
+
+
+.excellent-img
+    margin-top: 79px
+    min-height: 616px
+    min-width: 20vh
+    background-size: contain
+    background-position: bottom
+    background-repeat: no-repeat
+
+
+.excellent-content
+    padding-top: 90px
+    max-width: 670px
+    h2 
+        font-size: 30px
+        max-width: 425px
+    p 
+        font-size: 16px
+        max-width: 680px
+
+.excellent-content-rows
+    padding-top: 30px
+    padding-left: 30px
+    line-height: 0
+    margin: 0
+    img 
+        position: relative
+        top: 25px
+        margin: 0
+        padding: 0
+    p 
+        line-height: 30px
+        padding: 0 0 0 40px
+        margin: 0
+
+
+.counters
+    height: 300px
+    background: linear-gradient(to right, $gradient-start, $gradient-end)
+    .container
+        width: 1000px
+        grid-template-columns: repeat(5, 1fr)
+        align-content: center
+        text-align: center
+
+
+
+.counters-item
+    padding-top: 60px
+    img  
+        position: relative
+        width: 44px
+        height: 44px
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: 50% 
+    p 
+        color: $hover
+        font-size: 14px
+        line-height: 30px
+        padding-top: 5px
+        height: 30px
+    h1 
+        font-size: 48px
+        font-weight: normal
+        color: #ffffff
+        line-height: 0
+        padding: 0
+    hr 
+        width: 40px
+        border: 1.5px solid #ffffff
+        margin-top: 25px
+        
+        
+
+.recent-posts
+    height: 750px
+    text-align: center
+    padding-top: 50px
+    h2 
+        font-size: 30px
+        color: $dark
+        height: 35px
+    p 
+        font-size: 16px
+
+.recent-posts-container 
+    margin-top: 40px
+    grid-gap: 30px
+    
+
+
+.recent-post
+    margin: auto 20px
+    min-height: 395px
+    position: relative
+    border: 1px solid #fbfaf8
+    text-decoration: none
+    &:hover
+        .calendar
+            background-color: $hover
+            .calendar-month  
+                background-color: $accent
+        color: $accent
+        .recent-content
+            h3 
+                color: $hover
+            p 
+                color: #ffffff
+        &::before
+            opacity: .85    
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: $gradient-start
+        opacity: .001
+        transition: opacity .3s ease
+        z-index: 6
+    &:active
+        &::before
+            background-color: $gradient-start
+            opacity: .9
+            transition: opacity .1s ease
+
+.calendar
+    position: absolute
+    top: 20px
+    left: 20px
+    right: 0
+    bottom: 0
+    height: 60px
+    width: 50px
+    background-color: #363636
+    border-radius: 3px
+    z-index: 12
+
+
+.calendar-day
+    font-size: 24px
+    color: #ffffff
+    height: 35px  
+
+.calendar-month        
+    font-size: 12px
+    line-height: 24px
+    background-color: #252525
+    color: #ffffff
+    height: 25px
+    border-radius: 3px
+    
+
+.recent-img
+    position: relative
+    z-index: 2
+    min-height: 237px
+    background-size: contain
+    background-position: top 
+    background-repeat: no-repeat   
+
+.recent-content
+    position: relative
+    z-index: 7
+    text-align: left
+    padding: 0 30px
+    line-height: 0
+    h3 
+        color: $dark
+        font-size: 20px 
+        line-height: 20px
+        margin-top: 15px
+    p 
+        color: $gray
+        line-height: 22px
+        font-size: 14px
+        padding-bottom: 10px
+    span 
+        
+        color: $hover
+        font-size: 14px
+        margin-top: 5px
+        img 
+            position: relative
+            bottom: 1.8px
+            padding-left: 80px
+            
+
+.recent-posts
+    .slick-prev
+        top: 110%
+        left: 48%
+        display: block
+        background-image: url(../img/recent/left.png)
+        background-size: contain
+        background-repeat: no-repeat
+        width: 22px
+        height: 22px
+        &::before
+            content: ""
+        &:hover
+            background-image: url(../img/recent/left-1.png)
+            transition: background-image .2s ease   
+        &:active
+            filter: brightness(0)
+            transition: filter .2s ease
+            
+      
+.recent-posts
+    .slick-next 
+        top: 110%
+        right: 47%
+        display: block
+        background-image: url(../img/recent/right.png)
+        background-size: contain
+        background-repeat: no-repeat
+        width: 22px
+        height: 22px
+        &::before
+            content: ""
+        &:hover
+            background-image: url(../img/recent/right-1.png)
+            transition: background-image .2s ease   
+        &:active
+            filter: brightness(0)
+            transition: filter .2s ease
+
+
+
+.partners
+    min-height: 489px
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+    &:hover
+ 
+        &::before
+            opacity: .6
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: #111111
+        opacity: .4
+        transition: opacity .5s ease
+    > *
+        z-index: 1
+
+.partners-logo
+    min-height: 480px 
+    position: relative
+    padding: 10px 60px 0 60px
+    align-content: center
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 30px
+
+
+footer 
+    min-height: 508px
+    background-color: #191919
+
+
+.footer
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 30px
+    padding-top: 50px
+    h2 
+        font-size: 24px
+        color: #ffffff
+    p 
+        font-size: 14px
+        line-height: 20px
+        color: $dark 
+        cursor: pointer
+        padding: 0
+        margin: 1px 0
+        a 
+            text-decoration: none
+            color: #959595
+            &:hover
+                color: $dark
+            &:active
+                color: #7a1010
+        
+    hr 
+        border: 0.5px solid $dark 
+        opacity: .2
+        margin: 20px 0
+
+
+.about-footer
+    p 
+        line-height: 26px
+        padding: 30px 0
+    img 
+        padding-left: 10px
+
+.read-mor
+    border: 1px solid #191919
+    padding: 5px
+    &:hover
+        border: 1px solid $gray
+        border-radius: 3px
+        padding: 5px
+        cursor: pointer
+        transition: border .3s ease
+    &:active
+        border: 1px solid #ffffff
+        
+
+.recent-footer,
+.our-twitter-footer
+    div
+        cursor: pointer
+        &:hover
+            p 
+                color: $hover
+                transition: color .3s ease              
+            .data
+                color: #c2c2c2
+                transition: color .3s ease
+        &:active
+            p 
+                color: #222222
+                transition: color .001s ease
+            .data
+                color: #222222
+                transition: color .0013s ease
+
+
+.blue
+    color: #00bff3
+
+
+.data
+    color: #363636
+    font-size: 12px
+    line-height: 0
+    
+
+.widgers-footer-items
+    grid-template-columns: repeat(2, 2fr)
+    grid-gap: 10px
+    max-width: 270px
+    line-height: 0
+
+.widgets-item
+    cursor: pointer
+    position: relative
+    &:hover
+        &::before
+            opacity: .8
+    &:active
+        &::before
+            background-color: #401717
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: #000000
+        opacity: .001
+        transition: opacity .5s ease
+    > *
+        z-index: 1
+        
+
+.copyright
+    height: 111px
+    background-color: #111111
+
+
+.copyright-left
+    padding-top: 30px
+    padding-bottom: 0
+    float: left
+    max-width: 400px
+    p
+        a 
+            text-decoration: none
+            color: $gray
+            &:hover
+                color: $hover
+            &:active
+                color: #7a1010
+        font-size: 13px 
+        color: $dark
+        span 
+            cursor: pointer
+            color: #ffffff
+            font-size: 13px
+            &:hover
+                color: $hover
+            &:active
+                color: #7a1010
+
+.copyright-right
+    padding-top: 30px
+    float: right
+    max-width: 320px
+    p
+        font-size: 13px 
+        color: $dark
+        span 
+            cursor: pointer
+            color: #ffffff
+            font-size: 13px
+            &:hover
+                color: $hover
+            &:active
+                color: #7a1010
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Всегда в конце

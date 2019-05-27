@@ -1,0 +1,14 @@
+<svg width="80" height="88" viewBox="39 36 42 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+
+<path d="M56.5359 30.9273C58.6795 29.6909 61.3205 29.6909 63.4641 30.9273L76.5359 38.4667C78.6795 39.703 80 41.9879 80 44.4606V59.5394C80 62.0121 78.6795 64.297 76.5359 65.5333L63.4641 73.0727C61.3205 74.3091 58.6795 74.3091 56.5359 73.0727L43.4641 65.5333C41.3205 64.297 40 62.0121 40 59.5394V44.4606C40 41.9879 41.3205 39.703 43.4641 38.4667L56.5359 30.9273Z" fill="red"/>
+<rect x="78" y="1.8" width="10" height="2" rx="1" transform="rotate(45 8 0)" fill="white"/>
+<rect x="17.9" y="67.1" width="10" height="2" rx="1" transform="rotate(-45 18 15)" fill="white"/>
+
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0" width="120" height="124" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+</filter>
+</defs>
+</svg>

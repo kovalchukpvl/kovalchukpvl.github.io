@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>KovalchukTest</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<style>
+		body {
+			opacity: 0;
+			overflow-x: hidden;
+		}
+
+		html {
+			background-color: #fff;
+		}
+	</style>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+
+
+</head>
+<!-- https://www.figma.com/file/HaCw0e78tkUoPBTf7GFoDkwc/Untitled?node-id=25%3A39 -->
+
+<body>
+
+	<div class="block-one">
+		<div class="container">
+			<p class="top-p">*У разі Вашої перемоги в Акції "Золотий Фонд" та виникнення подібної ситуації Ви можете
+				отримати такого листа</p>
+			<img class="logo" src="img/logo.png" alt="logo">
+			<h1 class="name">{{Name}}</h1>
+			<h2>На Вас чекає грандіозне нагородження!</h2>
+			<p>Від щирого серця вітаю Вас! Ви заслужено здобули перемогу і будете винагороджені по максимуму! Мені
+				приємно усвідомлювати, що саме Ви отримаєте Головний приз Акції – 317 000,00 гривень!</p>
+			<div class="btn" id="headerBtn">
+				<p>обрати дату нагородження</p>
+			</div>
+			<img class="photo" src="img/Depositphotos.png" alt="photo">
+			<div class="podpis">
+				<p>З повагою, Голова Фінансового відділу з виплати призів Олена Філімонова.<span>*</span></p>
+				<img src="img/filimonova-podpis.png" alt="podpis">
+			</div>
+		</div>
+	</div>
+
+	<div class="block-two">
+		<div class="container">
+			<h2 class="name">{{Name}},<br>вітаємо!<br>Ви успішно пройшли всі етапи відбору і отримуєте<br><span>ЧЕРВОНИЙ
+					ДИПЛОМ ПЕРЕМОЖЦЯ!</span></h2>
+			<div class="colosock">
+				<img src="img/kolosok.svg" alt="colosok">
+				<div class="line"></div>
+				<img src="img/kolosok.svg" alt="colosok">
+			</div>
+			<div class="content">
+				<div class="left">
+					<h3>Фінансовий відділ “PrizeMe” пишається Вами!</h3>
+					<p>Ви дуже швидко реагували на листи і правильно заповнювали офіційні документи, саме тому перед
+						нагородженням ми вирішили видати Вам <span class="red">ЧЕРВОНИЙ ДИПЛОМ ПЕРЕМОЖЦЯ,</span> що
+						надає Вам унікальне право на першочергову та БЕЗКОШТОВНУ доставку виграшу.*</p>
+
+					<p>Радійте! Гонитва за виграшем завершена. Ваші документи підписано, гроші підготовлено. Тепер Ви
+						гарантовано одержите <span class="yell">317 000,00 гривень</span> без черг і на першу вимогу.
+					</p>
+
+					<p class="yellow">І зараз все, що лишилося – лише повідомити нам зручний для Вас день доставки
+						грошей! Це останній обов’язковий крок для отримання 317 000,00 гривень.<span>*</span></p>
+
+					<p>
+						Завантажте ДИПЛОМ або запишіть його номер для пред’явлення кур’єру Служби доставки (за бажанням
+						можете роздрукувати ДИПЛОМ, після завантаження). Ознайомтеся з ДОДАТКОМ, щоб дізнатись усі
+						подробиці Вашої перемоги. </p>
+				</div>
+				<div class="right">
+					<div class="diplom"></div>
+					<div class="btn" id="download">
+						<p>ЗАВАНТАЖИТИ</p>
+					</div>
+					<div class="dodatok" id="dodatok"></div>
+			
+				</div>
+			</div>
+			<div class="doplomMod">
+				<div class="dimlomImg"></div>
+			</div>
+			<div class="dodatokMod book">
+				<div class="dodatokImg"></div>
+				<div class="dodatokImgOne page"></div>
+			</div>
+
+			<div class="bottom-content">
+				<h2>Завдяки Вашому ЧЕРВОНОМУ ДИПЛОМУ ПЕРЕМОЖЦЯ доставку виграшу буде здійснено БЕЗКОШТОВНО!</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="block-three">
+		<div class="container">
+			<h2 class="name">{{Name}},<br>Ви – найкращий клієнт компанії!</h2>
+			<h3>Ви – Власник ЧЕРВОНОГО<br>ДИПЛОМА ПЕРЕМОЖЦЯ!</h3>
+			<p>Ми вже готові доставити Вам виграш за адресою Вашого проживання. Головне – повідомте, коли Вам буде
+				зручно зустріти кур’єра компанії та одержати гроші.</p>
+			<p>Ви можете обрати будь-який тиждень виплат та день (навіть вихідний) для візиту кур’єра.</p>
+			<img src="img/Depositphotos-2.png" alt="deposit">
+		</div>
+	</div>
+
+	<div class="block-four">
+		<div class="container">
+			<h2>Ми надсилаємо Вам<br>“БЛАНК НА ДОСТАВКУ ВИГРАШУ”.</h2>
+			<div class="colosock">
+				<img src="img/kolosok.svg" alt="colosok">
+				<div class="line"></div>
+				<img src="img/kolosok.svg" alt="colosok">
+			</div>
+			<div class="content">
+				<div class="left">
+					<h2>{{Name}}!</h2>
+					<p>Щоб отримати свій виграш – впишіть у “БЛАНК” зручну для Вас дату отримання виграшу та надішліть
+						нам. Після цього кур’єр “PrizeMe” доставить Вам <span>317 000,00 гривень</span> прямо додому.
+					</p>
+				</div>
+				<div class="right">
+					<img src="img/zrazok.png" alt="zrazok">
+					<h2>ЗРАЗОК</h2>
+				</div>
+			</div>
+			<div class="bottom-content">
+				<h2>ЗАПОВНЕНИЙ “БЛАНК НА ДОСТАВКУ ВИГРАШУ” – ВАША ГАРАНТІЯ ОТРИМАННЯ <span>317 000,00 ГРИВЕНЬ!</span>
+				</h2>
+			</div>
+			<div class="btn four-btn">	
+				<p>ЗАПОВНИТИ БЛАНК</p>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="block-five">
+		<div class="container">
+			<h2 class="htop">ІНСТРУКЦІЯ З ОДЕРЖАННЯ ВИГРАШУ</h2>
+
+			<div class="content">
+
+				<div class="cont-elem">
+					<div class="img">
+						<img src="img/img-1.png" alt="">
+						<img src="img/arrRight.png" alt="">
+					</div>
+					<div class="text">
+						<h3>1</h3>
+						<p> Завантажте ЧЕРВОНИЙ ДИПЛОМ ПЕРЕМОЖЦЯ або перепишіть його номер. Ознайомтся з ДОДАТКОМ.</p>
+					</div>
+				</div>
+
+				<div class="cont-elem">
+					<div class="img">
+						<img src="img/img-2.png" alt="">
+						<img src="img/arrRight.png" alt="">
+					</div>
+					<div class="text">
+						<h3>2</h3>
+						<p>Заповніть “БЛАНК НА ДОСТАВКУ ВИГРАШУ”. Обов’язково впишіть зручні для Вас тиждень виплат та
+							день одержання грошей, а також адресу.</p>
+					</div>
+				</div>
+
+				<div class="cont-elem">
+					<div class="img">
+						<img src="img/img-3.png" alt="">
+						<img src="img/arrRight.png" alt="">
+					</div>
+					<div class="text">
+						<h3>3</h3>
+						<p>Оберіть уподобані товари з акційної товарної пропозиції. Акційна пропозиція від PrizeMe
+							дійсна лише протягом 24 годин! Замовте будь-які товари за СУПЕРЦІНОЮ!</p>
+					</div>
+				</div>
+
+				<div class="cont-elem">
+					<div class="img">
+						<img src="img/img-4.png" alt="">
+						<img src="" alt="">
+					</div>
+					<div class="text">
+						<h3>4</h3>
+						<p>Заберіть на пошті посилку із замовленими товарами та очікуйте кур’єра, який БЕЗКОШТОВНО
+							ПРИВЕЗЕ Вам гроші прямо додому.</p>
+					</div>
+				</div>
+			</div>
+
+			<h1>Увага: без Вашого замовлення “БЛАНК НА ДОСТАВКУ ВИГРАШУ” автоматично відбракується Системою автоматичної
+				верифікації,
+				а отже, виплата Вам 317 000,00 гривень НЕ ВІДБУДЕТЬСЯ!</h1>
+
+			<div class="bottom-content">
+				<h2>Якщо НЕ НАДІШЛЕТЕ ВІДПОВІДЬ – ВТРАТИТЕ 317 000,00 гривень назавжди!</h2>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="block-six">
+		<div class="container">
+			<div class="blank" id="blank">
+				<h2>Бланк на доставку виграшу</h2>
+
+				<form class="oneForm" action="">
+
+					<label class="cont">Я, {{Name}},<br> як Головний переможець Акції погоджуюсь отримати свій виграш
+						– 317 000,00 гривень – готівкою. *
+						<input type="checkbox" checked="checked">
+						<span class="checkmark"></span>
+					</label>
+
+					<h1>Я очікую доставку грошового Призу:</h1>
+					<label class="contRadio">Першого тижня виплат (01–05.05)
+						<input type="radio" checked="checked" name="radio">
+						<span class="checkmark"></span>
+					</label>
+					<label class="contRadio">Другого тижня виплат (06–12.05)
+						<input type="radio" name="radio">
+						<span class="checkmark"></span>
+					</label>
+					<label class="contRadio">Третього тижня виплат (13–19.05)
+						<input type="radio" name="radio">
+						<span class="checkmark"></span>
+					</label>
+					<label class="contRadio">Четвертого тижня виплат (20–26.05)
+						<input type="radio" name="radio">
+						<span class="checkmark"></span>
+					</label>
+					<label class="contRadio">П’ятого тижня виплат (27.05–31.05).
+						<input type="radio" name="radio">
+						<span class="checkmark"></span>
+					</label>
+
+
+					<div class="custom-select" style="width:293px;">
+						<h1>В зручний для мене день тижня:</h1>
+						<select>
+							<option value="0">Понеділок</option>
+							<option value="1">Вівторок</option>
+							<option value="2">Середа</option>
+							<option value="3">Четвер</option>
+							<option value="4">П'ятниця</option>
+							<option value="5">Субота</option>
+							<option value="6">Неділя</option>
+						</select>
+					</div>
+
+					<div class="phone">
+						<h1>Номер телефону для зв’язку з Вами <br> та уточнення адреси доставки: </h1>
+						<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+							placeholder="+380 (98) 610 8688" required>
+					</div>
+
+					<div class="adresa">
+						<h1>Адреса доставки: </h1>
+						<input type="text"
+							placeholder="Область/Район/Населений пункт/Вулиця/Номер будинку/Номер квартири"
+							maxlength="1000" required>
+					</div>
+
+					<div class="down">
+						<label class="cont">Я відмовляюсь від БЕЗКОШТОВНОЇ доставки мені виграшу. Прошу вислати мені
+							317 000,00 гривень поштовим переказом.
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+
+						<label class="cont">Я заповнюю цей документ і роблю обов’язкове замовлення товарів.
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+
+				</form>
+
+			</div>
+		</div>
+		<div class="btn" id="footerBtn">
+			<p>НАДІСЛАТИ</p>
+		</div>
+
+		<h1>Щоб Служба автоматичної верифікації не відбракувала Ваш БЛАНК НА ДОСТАВКУ ВИГРАШУ, зробіть обов’язкове
+			замовлення товарів із <span>акційної пропозиції.</span></h1>
+
+		<p class="pSt">*Із правилами Акції "Золотий Фонд" можна ознайомитися за посиланням: <br>
+			https://prizeme.com.ua/obshchiye-pravila-i-polozheniya-provedeniya-aktsii-i-opredeleniya-pobediteley-prayz-mi.pdf
+		</p>
+
+		<p class="pSt">*Саме таке ім'я можуть мати співробітники компанії, якщо будуть обіймати відповідні посади на
+			момент виплати Призу</p>
+	</div>
+
+	<div class="tovar" id="tovar">
+		<div class="container">
+
+		</div>
+	</div>
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+	<script>
+		var x, i, j, selElmnt, a, b, c;
+		/*look for any elements with the class "custom-select":*/
+		x = document.getElementsByClassName("custom-select");
+		for (i = 0; i < x.length; i++) {
+			selElmnt = x[i].getElementsByTagName("select")[0];
+			/*for each element, create a new DIV that will act as the selected item:*/
+			a = document.createElement("DIV");
+			a.setAttribute("class", "select-selected");
+			a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+			x[i].appendChild(a);
+			/*for each element, create a new DIV that will contain the option list:*/
+			b = document.createElement("DIV");
+			b.setAttribute("class", "select-items select-hide");
+			for (j = 1; j < selElmnt.length; j++) {
+				/*for each option in the original select element,
+				create a new DIV that will act as an option item:*/
+				c = document.createElement("DIV");
+				c.innerHTML = selElmnt.options[j].innerHTML;
+				c.addEventListener("click", function (e) {
+					/*when an item is clicked, update the original select box,
+					and the selected item:*/
+					var y, i, k, s, h;
+					s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+					h = this.parentNode.previousSibling;
+					for (i = 0; i < s.length; i++) {
+						if (s.options[i].innerHTML == this.innerHTML) {
+							s.selectedIndex = i;
+							h.innerHTML = this.innerHTML;
+							y = this.parentNode.getElementsByClassName("same-as-selected");
+							for (k = 0; k < y.length; k++) {
+								y[k].removeAttribute("class");
+							}
+							this.setAttribute("class", "same-as-selected");
+							break;
+						}
+					}
+					h.click();
+				});
+				b.appendChild(c);
+			}
+			x[i].appendChild(b);
+			a.addEventListener("click", function (e) {
+				/*when the select box is clicked, close any other select boxes,
+				and open/close the current select box:*/
+				e.stopPropagation();
+				closeAllSelect(this);
+				this.nextSibling.classList.toggle("select-hide");
+				this.classList.toggle("select-arrow-active");
+			});
+		}
+		function closeAllSelect(elmnt) {
+			/*a function that will close all select boxes in the document,
+			except the current select box:*/
+			var x, y, i, arrNo = [];
+			x = document.getElementsByClassName("select-items");
+			y = document.getElementsByClassName("select-selected");
+			for (i = 0; i < y.length; i++) {
+				if (elmnt == y[i]) {
+					arrNo.push(i)
+				} else {
+					y[i].classList.remove("select-arrow-active");
+				}
+			}
+			for (i = 0; i < x.length; i++) {
+				if (arrNo.indexOf(i)) {
+					x[i].classList.add("select-hide");
+				}
+			}
+		}
+		/*if the user clicks anywhere outside the select box,
+		then close all select boxes:*/
+		document.addEventListener("click", closeAllSelect);
+	</script>
+
+</body>
+
+</html>

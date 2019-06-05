@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Form</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<style>
+		body {
+			opacity: 0;
+			overflow-x: hidden;
+		}
+
+		html {
+			background-color: #fff;
+		}
+	</style>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+	<div class="formTest">
+		<div class="container">
+			<div class="scale">
+				<div>
+					<h1>CALL us <span>+1 234 555 6677</span></h1>
+				</div>
+			</div>
+			<h3>27 Ba Trieu St. Hue city, Viet Nam</h3>
+			<div class="social">
+				<div class="fb hover">
+					<img src="img/facebook.svg" alt="">
+				</div>
+				<div class="tw hover">
+					<img src="img/twitter.svg" alt="">
+				</div>
+				<div class="in hover">
+					<img src="img/linkedin.svg" alt="">
+				</div>
+				<div class="pn hover">
+					<img src="img/pinterest.svg" alt="">
+				</div>
+			</div>
+			<div class="scaleTwo">
+				<h2>send a message</h2>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetue elit. Quisque eleLorem ipsum dolor sit amet, consectetuer
+				adipiscing elit. Proin sed odio et ante adipiscing lobortis.</p>
+
+			<form id="contactForm" action="handler.php" method="post">
+
+				<div class="left-f">
+					<div class="field-block">
+						<label for="name"></label>
+						<input id="name" class="field" name="name" required type="text" placeholder="Your Name">
+					</div>
+
+					<div class="field-block">
+						<label for="email"></label>
+						<input id="email" class="field" name="email" required type="email" placeholder="Your Email">
+					</div>
+
+					<div class="field-block ">
+						<label for="phone"></label>
+						<input id="phone" class="field" name="phone" required type="text" placeholder="Phone">
+					</div>
+				</div>
+
+				<div class="field-block msge">
+					<label for="message"></label>
+					<textarea id="message" class="field" placeholder="Message" required name="message"
+						rows="4"></textarea>
+				</div>
+
+				<button id="button" class="button" type="submit">learn more</button>
+
+				<div class="result">
+					<span id="answer"></span>
+					<span id="loader"><img src="images/loader.gif" alt=""></span>
+				</div>
+
+			</form>
+
+
+			<img src="img/line.png" class="line" alt="line">
+			<h4>DIZAINO™ - CREATIVE DESIGN & DEVELOPMENT BY JUNOTEAM</h4>
+			<img src="img/ArrowTop.png" class="arrow hover" alt="arrow">
+		</div>
+	</div>
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+	<!-- <script src="libs/pixelScreen.js"></script> -->
+
+</body>
+
+</html>

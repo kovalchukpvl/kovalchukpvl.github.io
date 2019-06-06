@@ -53,51 +53,24 @@ $(document).ready(function () {
     // $("#solutions").animated("zoomInUp", "bounceOut");
     // $(".sol-item").animated("zoomInUp", "bounceOutUp");
 
-    // $(".stElem").animated("fadeIn", "fadeOut");
+    $(".stElem").animated("fadeIn", "fadeOut");
 
     $(".three-screen h1, .four-screen h1, .OurStandarts-h").animated("bounceInRight", "bounceOut");
     $(".three-screen-grup").animated("fadeIn", "fadeOut");
-    $(".slider-elem").animated("slideInDown", "bounceOut");
-    $("#slider-btn").animated("slideInUp", "bounceOut");
-    $("footer").animated("slideInUp");
+    // $(".slider-elem").animated("slideInDown", "bounceOut");
+    // $("#slider-btn").animated("slideInUp", "bounceOut");
+    // $("footer").animated("slideInUp");
 
 
 })
 
 
 
-// if ($('.stElem').visible(true)) {
-//     console.log('видно')
-
-//         $('.stImg').css('-webkit-transform','rotate(60deg)'); 
-
-// } else {
-//     console.log('не видно')
-// }
-
-// $.fn.isInViewport = function() {
-//     var elementTop = $(this).offset().top;
-//     var elementBottom = elementTop + $(this).outerHeight();
-
-//     var viewportTop = $(window).scrollTop();
-//     var viewportBottom = viewportTop + $(window).height();
-
-//     return elementBottom > viewportTop && elementTop < viewportBottom;
-// };
-
-// $(window).on('resize scroll', function() {
-//     if ($('.stElem').isInViewport()) {
-
-//     } else {
-//         $('.stImg').css('-webkit-transform','rotate(60deg)');
-//     }
-// });
-
 var element_position = $(".stElem").offset().top;
 var scroll_position = $(window).scrollTop();
 var viewport_height = $(window).height();
 
-
+var header_position = $("header").offset().top;
 
 var num = 20;
 var CurrentScroll = 0;
@@ -105,22 +78,37 @@ $(window).scroll(function (event) {
 
     var NextScroll = $(this).scrollTop();
 
+    // анімація кружків
     if ((NextScroll + viewport_height) > element_position) {
         if (NextScroll > CurrentScroll) {
-            console.log('вверх');
+            // console.log('вверх');
             
             $('.stImg').css('-webkit-transform', 'rotate(' + num-- + 'deg)');
         } else {
-            console.log('вниз');
+            // console.log('вниз');
             $('.stImg').css('-webkit-transform', 'rotate(' + num++ + 'deg)');
         }
-        $('.stImg').mouseover( function(){
-            $(this).css('-webkit-transform', 'rotate(60deg)')
-            console.log('hover');
-        }).mouseout( function(){
-            $(this).css('-webkit-transform', 'rotate(0deg)')
-            console.log('hoverOut');
-        })
+        // $('.stImg').mouseover( function(){
+        //     $(this).css('-webkit-transform', 'rotate(60deg)')
+        //     console.log('hover');
+        // }).mouseout( function(){
+        //     $(this).css('-webkit-transform', 'rotate(0deg)')
+        //     console.log('hoverOut');
+        // })
     }
+
+
+    // анімація шапки   (потрібно змінити розрахунок коли вискакує шапка - чисто 100)
+    if (NextScroll > ($("header").offset().top + 100)) {  
+        $("header").css("position", "fixed").css('box-shadow', '0px 0px 40px rgba(0, 0, 0, 0.3)').css('animation-duration', '0.2s').animated("slideInDown");
+        // console.log('не видно')
+        console.log($("header").offset().top)
+    } else if (NextScroll  == 0) {
+        $("header").css("position", "absolute").css('box-shadow', '0px 0px 40px rgba(0, 0, 0, 0.1)').removeClass('animated').removeClass("slideInDown");
+        // console.log('вернулися назад')
+    }
+
+    
+
     CurrentScroll = NextScroll;
 });

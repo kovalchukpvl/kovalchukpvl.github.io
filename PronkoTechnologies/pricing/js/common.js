@@ -94,7 +94,7 @@ $(document).ready(function () {
     width();
     function width() {
         // console.log(document.body.clientWidth);
-        var fontKof = 0.0063333333333333;
+        var fontKof = 0.0073333333333333;
         var fontS = document.body.clientWidth * fontKof;
         console.log(fontS)
 

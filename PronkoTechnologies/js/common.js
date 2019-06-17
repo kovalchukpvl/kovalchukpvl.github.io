@@ -135,9 +135,17 @@ $(document).ready(function () {
                 'top': '0'
             })
 
+            $('.foot-left-figures').css({
+                'opacity': '1'
+            })
+
+            $('.foot-right-figures').css({
+                'opacity': '1'
+            })
 
 
-        } else if (DisplayWidth >= 400) {
+
+        } else if (DisplayWidth >= 480) {
             $('body').css({
                 // 'font-size': (document.body.clientWidth *  0.0133) + 'px'
                 'font-size': (fontS *  1.5) + 'px'
@@ -153,6 +161,9 @@ $(document).ready(function () {
             })
 
 
+
+
+
         } else {
             $('body').css({
                 // 'font-size': (document.body.clientWidth *  0.0133) + 'px'
@@ -166,6 +177,14 @@ $(document).ready(function () {
             $('.right-figures').css({
                 'right': '-9em',
                 'top': '-0.5em'
+            })
+
+            $('.foot-left-figures').css({
+                'opacity': '0'
+            })
+
+            $('.foot-right-figures').css({
+                'opacity': '0'
             })
         }
 

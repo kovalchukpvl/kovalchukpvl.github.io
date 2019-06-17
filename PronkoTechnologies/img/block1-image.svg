@@ -1,0 +1,82 @@
+<svg width="1561" height="1561" viewBox="0 -500 1561 1561" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<path id="motionPathOne"  opacity="0.5" d="M680.414 -470.497C703.68 -486.788 733.87 -489.429 759.611 -477.425L1328.72 -212.047C1354.46 -200.043 1371.84 -175.219 1374.32 -146.924L1429.05 478.625C1431.52 506.92 1418.71 534.386 1395.45 550.677L881.069 910.848C857.803 927.139 827.613 929.78 801.872 917.777L232.766 652.398C207.024 640.395 189.642 615.57 187.166 587.276L132.438 -38.2739C129.962 -66.5685 142.77 -94.0343 166.036 -110.325L680.414 -470.497Z" stroke="#D93833"/>
+<path id="motionPath" d="M684.124 -332.679C707.391 -348.97 737.581 -351.612 763.322 -339.608L1215.24 -128.875C1240.98 -116.871 1258.37 -92.0467 1260.84 -63.7522L1304.3 432.988C1306.78 461.283 1293.97 488.749 1270.7 505.04L862.242 791.047C838.976 807.338 808.786 809.979 783.044 797.976L331.125 587.242C305.383 575.239 288.001 550.414 285.525 522.12L242.066 25.3791C239.591 -2.91544 252.398 -30.3814 275.664 -46.6724L684.124 -332.679Z" stroke="#D93833"/>
+
+
+
+<circle id="circle1" cx="" cy="" r="5.53228"   fill="#D93833"/>
+  <animateMotion xlink:href="#circle1" dur="80s"  keyPoints="0.85; 0.1" keyTimes="0; 0.9"  calcMode="linear" begin="0s" repeatCount="1"><mpath xlink:href="#motionPath" /></animateMotion>
+
+<circle id="circle2" cx="" cy="" r="4.61023"  fill="#D93833"/>
+  <animateMotion xlink:href="#circle2" dur="80s" keyPoints="0.65; 0.1" keyTimes="0; 0.8"  calcMode="linear"   begin="0s"  repeatCount="1"><mpath xlink:href="#motionPath" /></animateMotion>
+
+<circle id="circle3" cx="" cy="" r="3.68818"  fill="#D93833"/>
+  <animateMotion  xlink:href="#circle3" dur="80s" keyPoints="0.45; 0.1" keyTimes="0; 0.7"  calcMode="linear"  begin="0" repeatCount="1"><mpath xlink:href="#motionPath" /></animateMotion>
+
+<circle id="circle4" cx="" cy="" r="3.68818"  fill="#D93833"/>
+  <animateMotion xlink:href="#circle4" dur="80s" keyPoints="0.25; 0.1" keyTimes="0; 0.6"  calcMode="linear"  begin="0s" repeatCount="1"><mpath xlink:href="#motionPath" /></animateMotion>
+
+
+<circle id="circle01" cx="" cy="" r="4.61023"  fill="#D93833"/>
+  <animateMotion xlink:href="#circle01" dur="120s"  begin="0s" calcMode="linear" keyTimes="0;1" keyPoints="1;0"  repeatCount="indefinite"><mpath xlink:href="#motionPath" /></animateMotion>
+
+<circle id="circle02" cx="" cy="" r="3.68818"  fill="#D93833"/>
+  <animateMotion  xlink:href="#circle02" dur="120s"  begin="18s" calcMode="linear" keyTimes="0;1" keyPoints="1;0" repeatCount="indefinite"><mpath xlink:href="#motionPath" /></animateMotion>
+
+<circle id="circle03" cx="" cy="" r="3.68818"  fill="#D93833"/>
+  <animateMotion xlink:href="#circle03" dur="120s"  begin="36s" calcMode="linear" keyTimes="0;1" keyPoints="1;0" repeatCount="indefinite"><mpath xlink:href="#motionPath" /></animateMotion>
+
+<circle id="circle04" cx="" cy="" r="3.68818"  fill="#D93833"/>
+  <animateMotion xlink:href="#circle04" dur="120s"  begin="54s" calcMode="linear" keyTimes="0;1" keyPoints="1;0" repeatCount="indefinite"><mpath xlink:href="#motionPath" /></animateMotion>
+
+<circle id="circle05" cx="" cy="" r="4.61023"  fill="#D93833"/>
+  <animateMotion xlink:href="#circle05" dur="120s"  begin="72s" calcMode="linear" keyTimes="0;1" keyPoints="1;0" repeatCount="indefinite"><mpath xlink:href="#motionPath" /></animateMotion>
+
+<circle id="circle06" cx="" cy="" r="5.53228"   fill="#D93833"/>
+  <animateMotion xlink:href="#circle06" dur="120s"  begin="90s" calcMode="linear" keyTimes="0;1" keyPoints="1;0" repeatCount="indefinite"><mpath xlink:href="#motionPath" /></animateMotion>
+
+
+
+
+
+<!-- / зовнішній круг /-->
+<circle id="circleOne1" cx="" cy="" r="5.53228"   fill="#D93833"/>
+  <animateMotion xlink:href="#circleOne1" dur="120s"  keyPoints="0.95; 1" keyTimes="0; 0.05"  calcMode="linear" begin="0s" repeatCount="1"><mpath xlink:href="#motionPathOne" /></animateMotion>
+
+<circle id="circleOne2" cx="" cy="" r="4.61023"  fill="#D93833"/>
+  <animateMotion xlink:href="#circleOne2" dur="120s" keyPoints="0.75; 1" keyTimes="0; 0.25"  calcMode="linear"   begin="0s"  repeatCount="1"><mpath xlink:href="#motionPathOne" /></animateMotion>
+
+<circle id="circleOne3" cx="" cy="" r="3.68818"  fill="#D93833"/>
+  <animateMotion  xlink:href="#circleOne3" dur="120s" keyPoints="0.55; 1" keyTimes="0; 0.45"  calcMode="linear"  begin="0" repeatCount="1"><mpath xlink:href="#motionPathOne" /></animateMotion>
+
+<circle id="circleOne4" cx="" cy="" r="3.68818"  fill="#D93833"/>
+  <animateMotion xlink:href="#circleOne4" dur="120s" keyPoints="0.35; 1" keyTimes="0; 0.65"  calcMode="linear"  begin="0s" repeatCount="1"><mpath xlink:href="#motionPathOne" /></animateMotion>
+
+<circle id="circleOne5" cx="" cy="" r="3.68818"  fill="#D93833"/>
+  <animateMotion xlink:href="#circleOne5" dur="120s" keyPoints="0.15; 1" keyTimes="0; 0.85"  calcMode="linear"  begin="0s" repeatCount="1"><mpath xlink:href="#motionPathOne" /></animateMotion>
+
+
+<circle id="circleOne01" cx="" cy="" r="4.61023"  fill="#D93833"/>
+  <animateMotion xlink:href="#circleOne01" dur="120s"  begin="12s"  repeatCount="indefinite"><mpath xlink:href="#motionPathOne" /></animateMotion>
+
+<circle id="circleOne02" cx="" cy="" r="3.68818"  fill="#D93833"/>
+  <animateMotion  xlink:href="#circleOne02" dur="120s"  begin="27s" repeatCount="indefinite"><mpath xlink:href="#motionPathOne" /></animateMotion>
+
+<circle id="circleOne03" cx="" cy="" r="3.68818"  fill="#D93833"/>
+  <animateMotion xlink:href="#circleOne03" dur="120s"  begin="45s" repeatCount="indefinite"><mpath xlink:href="#motionPathOne" /></animateMotion>
+
+<circle id="circleOne04" cx="" cy="" r="3.68818"  fill="#D93833"/>
+  <animateMotion xlink:href="#circleOne04" dur="120s"  begin="63s" repeatCount="indefinite"><mpath xlink:href="#motionPathOne" /></animateMotion>
+
+<circle id="circleOne05" cx="" cy="" r="4.61023"  fill="#D93833"/>
+  <animateMotion xlink:href="#circleOne05" dur="120s"  begin="81s" repeatCount="indefinite"><mpath xlink:href="#motionPathOne" /></animateMotion>
+
+<circle id="circleOne06" cx="" cy="" r="5.53228"   fill="#D93833"/>
+  <animateMotion xlink:href="#circleOne06" dur="120s"  begin="99s" repeatCount="indefinite"><mpath xlink:href="#motionPathOne" /></animateMotion>
+
+<circle id="circleOne07" cx="" cy="" r="4.61023"  fill="#D93833"/>
+  <animateMotion xlink:href="#circleOne07" dur="120s"  begin="117s" repeatCount="indefinite"><mpath xlink:href="#motionPathOne" /></animateMotion>
+
+
+</svg>

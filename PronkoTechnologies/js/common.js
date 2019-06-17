@@ -20,7 +20,7 @@ $(document).ready(function () {
             left = 0;
             // clearTimeout(timer);
         }
-        polosa.style.left = left + 'px';
+        polosa.style.left = (left/16) + 'em';
         // autoSlider();
     }
 
@@ -33,72 +33,59 @@ $(document).ready(function () {
         if (left > 0) {
             left = 0;
         }
-        polosa.style.left = left + 'px';
+        polosa.style.left = (left/16) + 'em';
     }
 
     //------------------------------------------------------------------------->
 
 
     //-------------------------------------------------------------------- анімація появи <
-    $(".CTA .container").animated("bounceInLeft", "bounceOut");
-    $(".right-cta").animated("bounceInRight", "bounceOut");
-    $(".stElem").animated("fadeIn", "fadeOut");
-    $(".three-screen-grup").animated("fadeIn", "fadeOut");
-    $(".two-screen-h").animated("fadeIn", "fadeOut");
-    $(".three-screen h1, .four-screen h1, .OurStandarts-h").animated("fadeIn", "fadeOut");
-    $("#solutions").animated("fadeIn", "fadeOut");
 
+    $(".block1 .container").animated("bounceInLeft", "bounceOut");
+    $(".right-block1").animated("bounceInRight", "bounceOut");
+    $(".block3-grup").animated("fadeIn", "fadeOut");
+    $(".stElem").animated("fadeIn", "fadeOut");
+    $(".block2 h1, .block3 h1, .block4 h1, .block5 h1").animated("fadeIn", "fadeOut");
+    $("#solutions").animated("fadeIn", "fadeOut");
     //------------------------------------------------------------------------->
 
 
     //-------------------------------------------------------------------- анімація кружків, скрол функція анімації шапки <
     var element_position = $(".stElem").offset().top;
-    var scroll_position = $(window).scrollTop();
     var viewport_height = $(window).height();
-    var header_position = $("header").offset().top;
     var num = 20;
     var CurrentScroll = 0;
     $(window).scroll(function (event) {
 
         var NextScroll = $(this).scrollTop();
 
-        // анімація кружків
         if ((NextScroll + viewport_height) > element_position) {
             if (NextScroll > CurrentScroll) {
-                // console.log('вверх');
-
                 $('.stImg').css('-webkit-transform', 'rotate(' + num-- + 'deg)');
             } else {
-                // console.log('вниз');
                 $('.stImg').css('-webkit-transform', 'rotate(' + num++ + 'deg)');
             }
-            // $('.stImg').mouseover( function(){
-            //     $(this).css('-webkit-transform', 'rotate(60deg)')
-            //     console.log('hover');
-            // }).mouseout( function(){
-            //     $(this).css('-webkit-transform', 'rotate(0deg)')
-            //     console.log('hoverOut');
-            // })
         }
 
         // анімація шапки   (потрібно змінити розрахунок коли вискакує шапка - чисто 100)
         if (NextScroll > ($("header").offset().top + 100)) {
-            $("header").css("position", "fixed").css('box-shadow', '0px 0px 40px rgba(0, 0, 0, 0.3)').css('animation-duration', '0.2s').animated("slideInDown");
+            $("header").css("position", "fixed").css('box-shadow', '0 0 2.500em rgba(0, 0, 0, 0.3)').css('animation-duration', '0.2s').animated("slideInDown");
             // console.log('не видно')
             console.log($("header").offset().top)
         } else if (NextScroll == 0) {
-            $("header").css("position", "absolute").css('box-shadow', '0px 0px 40px rgba(0, 0, 0, 0.1)').removeClass('animated').removeClass("slideInDown");
+            $("header").css("position", "absolute").css('box-shadow', '0 0 2.500em rgba(0, 0, 0, 0.1)').removeClass('animated').removeClass("slideInDown");
             // console.log('вернулися назад')
         }
         CurrentScroll = NextScroll;
     });
     //------------------------------------------------------------------------->
 
+
     //------------------------------------------------------------------------- меню шапки <
     function SetEvents(dropN, dropdownN) { // меню шапки
         var tooggle = document.getElementsByClassName(dropN),
             dropdown_menu = document.getElementsByClassName(dropdownN);
-    
+
         tooggle[0].onmouseover = function () {
             dropdown_menu[0].style.display = "inline-block";
         };
@@ -111,8 +98,86 @@ $(document).ready(function () {
     }
     //------------------------------------------------------------------------->   
 
-})
 
+
+
+
+    //-------------------------------------------------------------------------скрипт розміру екрану <   
+    width();
+    function width() {
+        // console.log(document.body.clientWidth);
+
+        let DisplayWidth = document.body.clientWidth;
+        var fontKof;
+
+        if (DisplayWidth <= 1920 ) {
+            fontKof = 0.0083333333333333;
+        } else if (DisplayWidth >= 1920 & DisplayWidth <= 2240) {
+            fontKof = 0.0073333333333333;
+        } else if (DisplayWidth >= 2240) {
+            fontKof = 0.0063333333333333;
+        }
+
+        var fontS = DisplayWidth * fontKof;
+        console.log(fontS)
+
+        if (DisplayWidth >= 1100) {
+            $('body').css({
+                'font-size': fontS + 'px'
+            })
+
+            $('.block1').css({
+                'background-image': 'url("../img/left-figures.svg")'
+            })
+
+            $('.right-figures').css({
+                'right': '1%',
+                'top': '0'
+            })
+
+
+
+        } else if (DisplayWidth >= 400) {
+            $('body').css({
+                // 'font-size': (document.body.clientWidth *  0.0133) + 'px'
+                'font-size': (fontS *  1.5) + 'px'
+            })
+
+            $('.block1').css({
+                'background-image': 'none'
+            })
+
+            $('.right-figures').css({
+                'right': '-9em',
+                'top': '-0.5em'
+            })
+
+
+        } else {
+            $('body').css({
+                // 'font-size': (document.body.clientWidth *  0.0133) + 'px'
+                'font-size': (fontS *  1.6) + 'px'
+            })
+
+            $('.block1').css({
+                'background-image': 'none'
+            })
+
+            $('.right-figures').css({
+                'right': '-9em',
+                'top': '-0.5em'
+            })
+        }
+
+
+
+        return;
+    }
+    $(window).resize(function (){ width(); });
+
+
+  
+})
 
 
 

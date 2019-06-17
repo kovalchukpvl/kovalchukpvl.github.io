@@ -131,8 +131,7 @@ $(document).ready(function () {
             })
 
             $('.right-figures').css({
-                'right': '1%',
-                'top': '0'
+                'display': 'inline'
             })
 
             $('.foot-left-figures').css({
@@ -155,12 +154,14 @@ $(document).ready(function () {
                 'background-image': 'none'
             })
 
+            // $('.right-figures').css({
+            //     'right': '-9em',
+            //     'top': '-0.5em'
+            // })
+
             $('.right-figures').css({
-                'right': '-9em',
-                'top': '-0.5em'
+                'display': 'none',
             })
-
-
 
 
 
@@ -174,9 +175,13 @@ $(document).ready(function () {
                 'background-image': 'none'
             })
 
+            // $('.right-figures').css({
+            //     'right': '-9em',
+            //     'top': '-0.5em'
+            // })
+
             $('.right-figures').css({
-                'right': '-9em',
-                'top': '-0.5em'
+                'display': 'none',
             })
 
             $('.foot-left-figures').css({
